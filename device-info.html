@@ -233,10 +233,6 @@ Await)</a> sample.</p>
     options.filters = filters;
   }
 
-  navigator.bluetooth.getAdapterState(function(adapter) {
-		    log("Adapter " + adapter.address + ": " + adapter.name);
-		    });
-
   log('Requesting Bluetooth Device...');
   log('with ' + JSON.stringify(options));
   navigator.bluetooth.requestDevice(options)
