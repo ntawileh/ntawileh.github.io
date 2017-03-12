@@ -238,8 +238,10 @@ Await)</a> sample.</p>
   navigator.bluetooth.requestDevice(options)
   .then(device => {
     log('> Name:             ' + device.name);
+    log('> Address:          ' + device.address);
     log('> Id:               ' + device.id);
     log('> Connected:        ' + device.gatt.connected);
+    log('> UUIDS:            ' + device.uuids);
 
     log(device);
   })
